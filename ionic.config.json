@@ -1,0 +1,7 @@
+{
+    "name": "My MVP Product11 Unimobile",
+    "type": "angular",
+    "integrations": {
+        "cordova": {}
+    }
+}

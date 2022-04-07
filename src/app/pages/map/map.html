@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Map</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="!isGoogleMapsAPIKeyConfigured">
+    <p class="ion-padding-start ion-padding-end">{{userMessage1}}</p>
+    <p class="ion-padding-start ion-padding-end">{{userMessage2}}</p>
+    <p class="ion-padding-start ion-padding-end">
+      <a href="{{userMessage3}}">Get Google Maps API Key</a>
+    </p>
+  </div>
+  <div #mapCanvas class="map-canvas"></div>
+</ion-content>
